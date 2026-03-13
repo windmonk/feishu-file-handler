@@ -1,2 +1,0 @@
-# Feishu File Handler Skill
-# 无需额外依赖，仅使用 Python 标准库
