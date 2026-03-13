@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
+*.egg-info/
+dist/
+build/
 
 # Virtual Environment
 venv/
@@ -19,6 +22,7 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Config
 config.local.json
@@ -27,3 +31,7 @@ config.local.json
 # Test
 temp_*
 *.bak
+
+# Workspace artifacts
+memory/
+vault/

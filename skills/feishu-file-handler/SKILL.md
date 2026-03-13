@@ -1,3 +1,8 @@
+---
+name: feishu-file-handler
+description: "从飞书媒体目录（~/.nanobot/media/feishu/）获取文件到 nanobot workspace。由于 restrictToWorkspace 安全限制，此技能提供文件复制功能。"
+---
+
 # Feishu File Handler Skill
 
 ## 概述
@@ -115,13 +120,26 @@ fetch_feishu_files.fetch_file("仓储合同.docx")
 
 ```
 feishu-file-handler/
-├── SKILL.md                      # 本文件
-├── scripts/
+├── SKILL.md                      # 本文件（技能元数据）
+├── README.md                     # 项目说明
+├── .gitignore                    # Git 忽略规则
+├── scripts/                      # 脚本文件
 │   └── fetch_feishu_files.py     # 主脚本
-├── config.json                   # [已弃用] 配置文件
-├── feishu_file_handler.py        # [已弃用] 旧版实现
-└── README.md                     # 项目说明
+├── hooks/                        # 钩子脚本
+│   └── openclaw/                 # OpenClaw 平台钩子
+│       └── HOOK.md
+├── assets/                       # 资源文件
+│   └── example-config.json       # 示例配置
+└── references/                   # 参考文档
+    └── feishu-api.md             # Feishu API 参考
 ```
+
+## 旧版文件（已弃用）
+
+以下文件保留在 git 历史中，但不再使用：
+- `feishu_file_handler.py` - v1.0.0 的旧版实现
+- `config.json` - v1.0.0 的旧版配置
+- `requirements.txt` - v1.0.0 的依赖列表（v2.0.0 使用标准库）
 
 ## 技术栈
 

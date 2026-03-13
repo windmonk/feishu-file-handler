@@ -118,12 +118,24 @@ python scripts/fetch_feishu_files.py filename.docx --output ./downloads/
 feishu-file-handler/
 ├── SKILL.md                      # nanobot skill 元数据
 ├── README.md                     # 项目说明（本文件）
-├── .gitignore
-├── scripts/
-│   └── fetch_feishu_files.py     # 主脚本（新版）
-├── feishu_file_handler.py        # [已弃用] 旧版实现
-└── config.json                   # [已弃用] 旧版配置
+├── .gitignore                    # Git 忽略规则
+├── scripts/                      # 脚本文件
+│   └── fetch_feishu_files.py     # 主脚本（v2.0.0）
+├── hooks/                        # 钩子脚本
+│   └── openclaw/                 # OpenClaw 平台钩子
+│       └── HOOK.md
+├── assets/                       # 资源文件
+│   └── example-config.json       # 示例配置
+└── references/                   # 参考文档
+    └── feishu-api.md             # Feishu API 参考
 ```
+
+## 旧版文件（已弃用）
+
+以下文件保留在 git 历史中，但不再使用：
+- `feishu_file_handler.py` - v1.0.0 的旧版实现
+- `config.json` - v1.0.0 的旧版配置
+- `requirements.txt` - v1.0.0 的依赖列表（v2.0.0 使用标准库）
 
 ## 技术栈
 

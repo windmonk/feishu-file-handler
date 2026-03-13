@@ -1,0 +1,11 @@
+{
+  "media_dir": "~/.nanobot/media/feishu/",
+  "workspace_dir": "./",
+  "default_output": "./downloads/",
+  "file_types": {
+    "image": [".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp", ".svg"],
+    "doc": [".doc", ".docx", ".pdf", ".txt", ".md", ".xlsx", ".pptx"],
+    "pdf": [".pdf"],
+    "text": [".txt", ".md", ".py", ".js", ".html", ".css", ".json"]
+  }
+}
